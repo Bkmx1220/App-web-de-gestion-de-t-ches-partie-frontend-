@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000", // L'URL du backend NestJS
+  baseURL: process.env.REACT_APP_API_URL,// utilisation variable Vercel
 });
 
 // Pour le token JWT
